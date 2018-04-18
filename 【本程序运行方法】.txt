@@ -1,0 +1,18 @@
+﻿运行本程序，请：
+
+打开数据库，导入这个模拟数据，具体操作为：
+    开一个CMD窗口，运行  mongod --dbpath c:\database
+    然后在项目文件夹的根，再开一个CMD，复制下面的语句到CMD中按回车
+    mongoimport -d ershouche -c cars ./init/模拟数据.txt --drop
+    此时数据库就会被自动创建，表也会自动创建，数据库的名字ershouche，表的名字叫做cars。
+
+4. 再开一个CMD窗口，运行
+    node app.js
+
+5. 再开一个CMD窗口，运行
+    webpack
+
+恭喜！项目已经运行在了3000端口！！ 
+
+也就是说：
+本项目需要同时打开3个CMD窗口！分别在运行：mongod、node app.js、webpack
